@@ -5,12 +5,11 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.field_excerpt
-    - field.field.node.article.field_image
+    - field.field.node.article.field_images
     - field.field.node.article.field_tags
-    - image.style.wide
     - node.type.article
   module:
-    - image
+    - entity_reference_revisions
     - text
     - user
 _core:
@@ -34,16 +33,14 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
-  field_image:
-    type: image
-    label: hidden
+  field_images:
+    type: entity_reference_revisions_entity_view
+    label: above
     settings:
-      image_link: ''
-      image_style: wide
-      image_loading:
-        attribute: lazy
+      view_mode: default
+      link: ''
     third_party_settings: {  }
-    weight: -1
+    weight: 102
     region: content
   field_tags:
     type: entity_reference_label

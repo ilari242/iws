@@ -2,7 +2,7 @@ import { DrupalNode } from "next-drupal";
 import { z } from "zod";
 
 import { MetatagsSchema } from "@/lib/zod/metatag";
-import { ImageShape } from "@/lib/zod/paragraph";
+import { ImageSchema } from "@/lib/zod/paragraph";
 
 export const ArticleBaseSchema = z.object({
   type: z.literal("node--article"),
@@ -14,7 +14,7 @@ export const ArticleBaseSchema = z.object({
     display_name: z.string(),
   }),
   title: z.string(),
-  field_image: ImageShape.nullable(),
+  field_images: z.array(ImageSchema),
   field_excerpt: z.string().optional().nullable(),
 });
 
@@ -27,6 +27,7 @@ const ArticleSchema = ArticleBaseSchema.extend({
 
 export function validateAndCleanupArticle(article: DrupalNode): Article | null {
   try {
+    console.log(article);
     return ArticleSchema.parse(article);
   } catch (error) {
     const { name = "ZodError", issues = [] } = error;
