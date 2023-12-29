@@ -1,0 +1,20 @@
+uuid: cdde3d87-907c-4a64-bede-812b1583a0be
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+    - subrequests
+_core:
+  default_config_hash: D-thmsN09HWkilJq0monV8u7HvP8B8hW7lF9nKmY3OY
+id: next_api_role
+label: next_api_role
+weight: 4
+is_admin: null
+permissions:
+  - 'access user profiles'
+  - 'bypass node access'
+  - 'issue subrequests'
+  - 'view all media revisions'
+  - 'view all revisions'

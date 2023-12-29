@@ -1,0 +1,10 @@
+uuid: 038b1513-894d-4857-b24f-95411bd87d84
+langcode: en
+status: true
+dependencies: {  }
+id: demo_content
+label: demo_content
+description: ''
+source_type: null
+module: null
+shared_configuration: null

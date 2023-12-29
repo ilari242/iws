@@ -1,0 +1,14 @@
+uuid: 0f6d3114-0953-4247-87a5-a6db6f37af47
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.wunder_content_editor
+  module:
+    - user
+id: user_remove_role_action.wunder_content_editor
+label: 'Remove the Wunder content editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: wunder_content_editor

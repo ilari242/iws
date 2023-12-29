@@ -1,0 +1,12 @@
+uuid: 0f16bbc6-d5d0-48c9-a69b-d7339267bb25
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Oj8r5wt8ovhV9umOnvgnL6W60D_jJ2-VGfBbn9Iu2z0
+id: file_attachments
+label: 'File attachments'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

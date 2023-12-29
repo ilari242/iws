@@ -1,0 +1,14 @@
+uuid: cbcd9559-e7b7-4b7f-b92d-430c6a08786e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.next_api_role
+  module:
+    - user
+id: user_remove_role_action.next_api_role
+label: 'Remove the next_api_role role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: next_api_role

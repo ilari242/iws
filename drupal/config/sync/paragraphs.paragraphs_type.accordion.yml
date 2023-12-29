@@ -1,0 +1,12 @@
+uuid: 24033ee5-155f-4706-b7f0-ef7ac1fe13cd
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: _dVRUvMOuZVqiJg6ugpSNPmU8sxjrE_pxmxWOMDB5nE
+id: accordion
+label: Accordion
+icon_uuid: null
+icon_default: null
+description: 'This paragraph type holds an accordion.'
+behavior_plugins: {  }
