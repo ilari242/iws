@@ -3,16 +3,35 @@ display:
     display_title: Förvald
     display_options:
       fields:
+        media_bulk_form:
+          action_title: Åtgärd
         bundle:
           label: Typ
+        uid:
+          label: Författare
         status:
           label: Status
+          settings:
+            format_custom_false: 'Ej publicerad'
+            format_custom_true: Publicerad
         operations:
           label: Funktioner
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alla -'
       exposed_form:
         options:
           reset_button_label: Återställ
+          exposed_sorts_label: 'Sortera efter'
       filters:
         bundle:
           expose:
             label: Typ
+        status:
+          group_info:
+            group_items:
+              1:
+                title: Publicerad
+              2:
+                title: 'Ej publicerad'

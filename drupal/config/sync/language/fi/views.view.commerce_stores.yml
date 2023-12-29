@@ -1,7 +1,15 @@
 display:
   default:
-    display_title: Oletus
     display_options:
+      fields:
+        is_default:
+          label: Oletus
+        name:
+          label: Nimi
+        type:
+          label: Tyyppi
+        operations:
+          label: Toimenpiteet
       pager:
         options:
           expose:
@@ -10,3 +18,7 @@ display:
         options:
           reset_button_label: Palauta
           exposed_sorts_label: Lajittele
+      filters:
+        type:
+          expose:
+            label: Tyyppi

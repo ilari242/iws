@@ -4,23 +4,72 @@ display:
       exposed_form:
         options:
           reset_button_label: Palauta
+          exposed_sorts_label: Lajittele
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Kaikki -'
       fields:
+        created:
+          label: Luotu
+        remote_addr:
+          label: 'IP osoite'
         view_webform_submission:
           label: Toimenpiteet
   embed_administer:
     display_options:
       fields:
+        webform_submission_bulk_form:
+          action_title: Toiminto
+        locked:
+          label: Lukittu
+        created:
+          label: Luotu
+        completed:
+          label: Valmis
+        remote_addr:
+          label: 'IP osoite'
         operations:
           label: Toimenpiteet
+      filters:
+        locked:
+          expose:
+            label: Lukittu
   embed_manage:
     display_options:
       fields:
+        webform_submission_bulk_form:
+          action_title: Toiminto
+        locked:
+          label: Lukittu
+        created:
+          label: Luotu
+        completed:
+          label: Valmis
+        remote_addr:
+          label: 'IP osoite'
         view_webform_submission:
           label: Toimenpiteet
         edit_webform_submission:
           label: Toimenpiteet
+      filters:
+        locked:
+          expose:
+            label: Lukittu
   embed_review:
     display_options:
       fields:
+        locked:
+          label: Lukittu
+        created:
+          label: Luotu
+        completed:
+          label: Valmis
+        remote_addr:
+          label: 'IP osoite'
         view_webform_submission:
           label: Toimenpiteet
+      filters:
+        locked:
+          expose:
+            label: Lukittu

@@ -3,14 +3,31 @@ display:
     display_title: Oletus
     display_options:
       fields:
+        title:
+          label: Otsikko
+        name:
+          label: Tekijä
         status:
           label: Tila
+          settings:
+            format_custom_false: Julkaisematon
+            format_custom_true: Julkaistu
         operations:
           label: Toimenpiteet
       exposed_form:
         options:
           reset_button_label: Palauta
+          exposed_sorts_label: Lajittele
       filters:
+        title:
+          expose:
+            label: Otsikko
         status:
           expose:
             label: Tila
+          group_info:
+            group_items:
+              1:
+                title: Julkaistu
+              2:
+                title: Julkaisematon

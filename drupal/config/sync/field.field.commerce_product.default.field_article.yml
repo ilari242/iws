@@ -1,0 +1,29 @@
+uuid: d621490f-7f44-476d-9459-71f99865cc6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.field_article
+    - node.type.article
+id: commerce_product.default.field_article
+field_name: field_article
+entity_type: commerce_product
+bundle: default
+label: Article
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

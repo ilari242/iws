@@ -1,0 +1,32 @@
+label: Varor
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Återställ
+          exposed_sorts_label: 'Sortera efter'
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alla -'
+      fields:
+        title:
+          label: Titel
+        type:
+          label: Typ
+        status:
+          label: Status
+          settings:
+            format_custom_true: Publicerad
+            format_custom_false: 'Ej publicerad'
+        operations:
+          label: Funktioner
+      filters:
+        type:
+          expose:
+            label: Typ
+        title:
+          expose:
+            label: Titel
+      title: Varor

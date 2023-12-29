@@ -2,6 +2,11 @@ display:
   default:
     display_title: Förvald
     display_options:
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alla -'
       exposed_form:
         options:
           reset_button_label: Återställ
+          exposed_sorts_label: 'Sortera efter'

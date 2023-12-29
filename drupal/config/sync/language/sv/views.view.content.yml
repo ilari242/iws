@@ -3,14 +3,31 @@ display:
     display_title: Förvald
     display_options:
       fields:
+        title:
+          label: Titel
+        name:
+          label: Författare
         status:
           label: Status
+          settings:
+            format_custom_false: 'Ej publicerad'
+            format_custom_true: Publicerad
         operations:
           label: Funktioner
       exposed_form:
         options:
           reset_button_label: Återställ
+          exposed_sorts_label: 'Sortera efter'
       filters:
+        title:
+          expose:
+            label: Titel
         status:
           expose:
             label: Status
+          group_info:
+            group_items:
+              1:
+                title: Publicerad
+              2:
+                title: 'Ej publicerad'

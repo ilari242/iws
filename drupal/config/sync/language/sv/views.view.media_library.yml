@@ -2,13 +2,52 @@ display:
   default:
     display_title: Förvald
     display_options:
+      fields:
+        media_bulk_form:
+          action_title: Åtgärd
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alla -'
       exposed_form:
         options:
           reset_button_label: Återställ
+          exposed_sorts_label: 'Sortera efter'
+      filters:
+        status:
+          group_info:
+            label: Publicerad
+            group_items:
+              1:
+                title: Publicerad
+              2:
+                title: 'Ej publicerad'
+        name:
+          expose:
+            label: Namn
   page:
     display_options:
       fields:
+        media_bulk_form:
+          action_title: Åtgärd
         edit_media:
           text: Redigera
         delete_media:
           text: Radera
+  widget:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Namn
+  widget_table:
+    display_options:
+      fields:
+        name:
+          label: Namn
+        uid:
+          label: Författare
+      filters:
+        name:
+          expose:
+            label: Namn

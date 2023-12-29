@@ -3,12 +3,30 @@ display:
     display_title: Oletus
     display_options:
       fields:
+        filename:
+          label: Nimi
         status:
           label: Tila
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Kaikki -'
       exposed_form:
         options:
           reset_button_label: Palauta
+          exposed_sorts_label: Lajittele
       filters:
         status:
           expose:
             label: Tila
+  page_2:
+    display_options:
+      fields:
+        entity_label:
+          label: Entiteetti
+        type:
+          label: 'Entiteetin tyyppi'
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Kaikki -'

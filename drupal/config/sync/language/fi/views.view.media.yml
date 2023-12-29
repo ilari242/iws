@@ -3,16 +3,35 @@ display:
     display_title: Oletus
     display_options:
       fields:
+        media_bulk_form:
+          action_title: Toiminto
         bundle:
           label: Tyyppi
+        uid:
+          label: Tekijä
         status:
           label: Tila
+          settings:
+            format_custom_false: Julkaisematon
+            format_custom_true: Julkaistu
         operations:
           label: Toimenpiteet
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Kaikki -'
       exposed_form:
         options:
           reset_button_label: Palauta
+          exposed_sorts_label: Lajittele
       filters:
         bundle:
           expose:
             label: Tyyppi
+        status:
+          group_info:
+            group_items:
+              1:
+                title: Julkaistu
+              2:
+                title: Julkaisematon

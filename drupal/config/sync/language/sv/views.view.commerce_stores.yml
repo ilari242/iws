@@ -1,12 +1,15 @@
 display:
   default:
-    display_title: Förvald
     display_options:
       fields:
-        filename:
+        is_default:
+          label: Förvald
+        name:
           label: Namn
-        status:
-          label: Status
+        type:
+          label: Typ
+        operations:
+          label: Funktioner
       pager:
         options:
           expose:
@@ -16,17 +19,6 @@ display:
           reset_button_label: Återställ
           exposed_sorts_label: 'Sortera efter'
       filters:
-        status:
-          expose:
-            label: Status
-  page_2:
-    display_options:
-      fields:
-        entity_label:
-          label: Objekt
         type:
-          label: Objektstyp
-      pager:
-        options:
           expose:
-            items_per_page_options_all_label: '- Alla -'
+            label: Typ

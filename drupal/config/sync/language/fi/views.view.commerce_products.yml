@@ -1,0 +1,32 @@
+label: Tuotteet
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Palauta
+          exposed_sorts_label: Lajittele
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Kaikki -'
+      fields:
+        title:
+          label: Otsikko
+        type:
+          label: Tyyppi
+        status:
+          label: Tila
+          settings:
+            format_custom_true: Julkaistu
+            format_custom_false: Julkaisematon
+        operations:
+          label: Toimenpiteet
+      filters:
+        type:
+          expose:
+            label: Tyyppi
+        title:
+          expose:
+            label: Otsikko
+      title: Tuotteet
